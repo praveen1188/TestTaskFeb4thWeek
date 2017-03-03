@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
  import AVKit
+import MediaPlayer
 class ViewController: UIViewController , UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     //TextField
@@ -23,6 +24,9 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
     @IBOutlet weak var btnFemale: UIButton!
     //View
     @IBOutlet weak var playerView: UIView!
+    
+    var player: AVPlayer!
+    var avpController = AVPlayerViewController()
     
     //Variable
     var stringGender = "Male"
@@ -42,10 +46,31 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+                
+    }
+    
+    
     func playVideo() {
-      
+        let url = Bundle.main.url(forResource: "video_1", withExtension: "mp4")
+//        if let path = url{
+//            let item = AVPlayerItem(url: path)
+//            self.player = AVPlayer(playerItem: item)
+//            self.avpController = AVPlayerViewController()
+//            self.avpController.player = self.player
+//           
+//            avpController.view.frame = playerView.frame
+//            self.addChildViewController(avpController)
+//            self.playerView.addSubview(avpController.view)
+//          }
+//        
         
     }
+    
+    
     @IBAction func btnDateofBirthMethod(_ sender: Any) {
         self.view.endEditing(true)
         DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) {

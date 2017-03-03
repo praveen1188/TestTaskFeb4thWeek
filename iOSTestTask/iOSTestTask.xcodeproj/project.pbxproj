@@ -33,6 +33,7 @@
 		F4FB7BFF1E69F6A500F00683 /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BFC1E69F6A500F00683 /* StringUtility.swift */; };
 		F4FB7C001E69F6A500F00683 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BFD1E69F6A500F00683 /* Utility.swift */; };
 		F4FB7C031E6A02AD00F00683 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7C021E6A02AD00F00683 /* DetailViewController.swift */; };
+		F4FB7C071E6A15B800F00683 /* video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F4FB7C061E6A15B800F00683 /* video_1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		F4FB7BFD1E69F6A500F00683 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F4FB7C011E69FC4300F00683 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		F4FB7C021E6A02AD00F00683 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4FB7C061E6A15B800F00683 /* video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F45F14181E69D16F00895D5E /* AppDelegate.swift */,
 				F45F141A1E69D16F00895D5E /* ViewController.swift */,
 				F4FB7C021E6A02AD00F00683 /* DetailViewController.swift */,
+				F4FB7C061E6A15B800F00683 /* video_1.mp4 */,
 				F4FB7C011E69FC4300F00683 /* video.mp4 */,
 				F45F141C1E69D16F00895D5E /* Main.storyboard */,
 				F45F141F1E69D16F00895D5E /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 				F45F14201E69D16F00895D5E /* Assets.xcassets in Resources */,
 				F4FB7BF81E69F53200F00683 /* IQKeyboardManager.bundle in Resources */,
 				F45F141E1E69D16F00895D5E /* Main.storyboard in Resources */,
+				F4FB7C071E6A15B800F00683 /* video_1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
