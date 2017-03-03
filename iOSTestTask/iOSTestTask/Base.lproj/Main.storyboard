@@ -25,6 +25,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wg-hv-oFY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4E4-my-3EN">
+                                        <rect key="frame" x="0.0" y="32" width="320" height="504"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amv-fg-9TD">
                                         <rect key="frame" x="0.0" y="64" width="320" height="512"/>
                                         <subviews>
@@ -37,7 +42,7 @@
                                                 <state key="normal" image="AddUser"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="35"/>
+                                                        <integer key="value" value="50"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layes.clipsToBounds" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
@@ -194,6 +199,7 @@
                         <outlet property="btnFemale" destination="FJe-kv-8IO" id="abB-cZ-puc"/>
                         <outlet property="btnMale" destination="wtr-gu-fnZ" id="gim-WM-YNh"/>
                         <outlet property="btnProfilePicture" destination="POO-fA-QKp" id="CEN-bU-7KA"/>
+                        <outlet property="playerView" destination="4E4-my-3EN" id="cdo-qr-fdy"/>
                         <outlet property="tfDateOfBirth" destination="awK-5P-c8T" id="a0U-2j-BAG"/>
                         <outlet property="tfEmail" destination="utT-5O-NT6" id="JVS-2S-aaw"/>
                         <outlet property="tfPhonenumber" destination="qae-ZX-76M" id="FfP-Gu-0tn"/>
@@ -204,10 +210,10 @@
             </objects>
             <point key="canvasLocation" x="1755.072463768116" y="-561.68478260869574"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Dko-xW-EL1">
             <objects>
-                <viewController storyboardIdentifier="LoginDetailController" id="StU-TW-fSZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailViewController" id="StU-TW-fSZ" customClass="DetailViewController" customModule="iOSTestTask" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xDI-iR-2kE"/>
                         <viewControllerLayoutGuide type="bottom" id="P9B-16-j9t"/>
@@ -222,6 +228,12 @@
                                     <constraint firstAttribute="width" constant="100" id="fY6-6l-V3v"/>
                                     <constraint firstAttribute="height" constant="100" id="y0Z-Gu-bWS"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layes.clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2w-2o-LB1">
                                 <rect key="frame" x="31" y="199" width="258" height="21"/>
@@ -292,6 +304,14 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="imgUser" destination="wJu-xt-VCY" id="K6h-V9-KMP"/>
+                        <outlet property="lblDOB" destination="IeW-3J-qum" id="lFd-Wo-E6l"/>
+                        <outlet property="lblEmail" destination="IhP-Z6-YWQ" id="EKA-3d-Ml6"/>
+                        <outlet property="lblGender" destination="g7Z-aa-Uyu" id="iI3-5x-qig"/>
+                        <outlet property="lblName" destination="W2w-2o-LB1" id="OIP-vF-eIX"/>
+                        <outlet property="lblPhoneNo" destination="VRp-1R-UrD" id="ESz-dc-CGy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOJ-yi-2PH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
