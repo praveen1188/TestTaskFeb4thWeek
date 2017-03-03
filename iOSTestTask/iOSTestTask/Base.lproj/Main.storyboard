@@ -107,6 +107,9 @@
                                                         <state key="normal" title="  Male" image="CheckedCheckbox">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnSelectGenderMale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JZ-aK-dY4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-kv-8IO">
                                                         <rect key="frame" x="111" y="26" width="94" height="22"/>
@@ -115,6 +118,9 @@
                                                         <state key="normal" title="  Female" image="UncheckedCheckbox">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="btnSelectGenderFemale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="282-hJ-t0J"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

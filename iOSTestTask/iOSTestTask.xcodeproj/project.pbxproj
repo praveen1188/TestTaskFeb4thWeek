@@ -29,6 +29,9 @@
 		F4FB7BF61E69F53200F00683 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BE41E69F53200F00683 /* IQToolbar.swift */; };
 		F4FB7BF71E69F53200F00683 /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BE51E69F53200F00683 /* IQUIView+IQKeyboardToolbar.swift */; };
 		F4FB7BF81E69F53200F00683 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4FB7BE71E69F53200F00683 /* IQKeyboardManager.bundle */; };
+		F4FB7BFE1E69F6A500F00683 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BFB1E69F6A500F00683 /* DatePickerDialog.swift */; };
+		F4FB7BFF1E69F6A500F00683 /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BFC1E69F6A500F00683 /* StringUtility.swift */; };
+		F4FB7C001E69F6A500F00683 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB7BFD1E69F6A500F00683 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		F4FB7BE41E69F53200F00683 /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		F4FB7BE51E69F53200F00683 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		F4FB7BE71E69F53200F00683 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		F4FB7BFB1E69F6A500F00683 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		F4FB7BFC1E69F6A500F00683 /* StringUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtility.swift; sourceTree = "<group>"; };
+		F4FB7BFD1E69F6A500F00683 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		F45F14171E69D16F00895D5E /* iOSTestTask */ = {
 			isa = PBXGroup;
 			children = (
+				F4FB7BF91E69F6A500F00683 /* Utility */,
 				F4FB7BD01E69F53200F00683 /* IQKeyboardManagerSwift */,
 				F45F14181E69D16F00895D5E /* AppDelegate.swift */,
 				F45F141A1E69D16F00895D5E /* ViewController.swift */,
@@ -163,6 +170,24 @@
 				F4FB7BE71E69F53200F00683 /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4FB7BF91E69F6A500F00683 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB7BFA1E69F6A500F00683 /* DatePickerDialog */,
+				F4FB7BFC1E69F6A500F00683 /* StringUtility.swift */,
+				F4FB7BFD1E69F6A500F00683 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F4FB7BFA1E69F6A500F00683 /* DatePickerDialog */ = {
+			isa = PBXGroup;
+			children = (
+				F4FB7BFB1E69F6A500F00683 /* DatePickerDialog.swift */,
+			);
+			path = DatePickerDialog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +265,7 @@
 			files = (
 				F4FB7BF71E69F53200F00683 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				F4FB7BEA1E69F53200F00683 /* IQUITextFieldView+Additions.swift in Sources */,
+				F4FB7BFE1E69F6A500F00683 /* DatePickerDialog.swift in Sources */,
 				F4FB7BF51E69F53200F00683 /* IQTitleBarButtonItem.swift in Sources */,
 				F4FB7BEE1E69F53200F00683 /* IQKeyboardManagerConstants.swift in Sources */,
 				F4FB7BF31E69F53200F00683 /* IQBarButtonItem.swift in Sources */,
@@ -250,6 +276,8 @@
 				F4FB7BEF1E69F53200F00683 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				F45F14191E69D16F00895D5E /* AppDelegate.swift in Sources */,
 				F4FB7BF61E69F53200F00683 /* IQToolbar.swift in Sources */,
+				F4FB7BFF1E69F6A500F00683 /* StringUtility.swift in Sources */,
+				F4FB7C001E69F6A500F00683 /* Utility.swift in Sources */,
 				F4FB7BF01E69F53200F00683 /* IQKeyboardManager.swift in Sources */,
 				F4FB7BEB1E69F53200F00683 /* IQUIView+Hierarchy.swift in Sources */,
 				F4FB7BF41E69F53200F00683 /* IQPreviousNextView.swift in Sources */,
