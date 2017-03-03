@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-
+ import AVKit
 class ViewController: UIViewController , UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
 
     //TextField
@@ -21,22 +21,31 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
     @IBOutlet weak var btnProfilePicture: UIButton!
     @IBOutlet weak var btnMale: UIButton!
     @IBOutlet weak var btnFemale: UIButton!
+    //View
+    @IBOutlet weak var playerView: UIView!
     
     //Variable
     var stringGender = "Male"
-    var loginUserDetails = [String: Any]()
+    var userDetails = [String: Any]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        btnProfilePicture.layer.cornerRadius = 0.5 * btnProfilePicture.bounds.size.width
+        btnProfilePicture.clipsToBounds = true
+        
+        playVideo()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    func playVideo() {
+      
+        
+    }
     @IBAction func btnDateofBirthMethod(_ sender: Any) {
         self.view.endEditing(true)
         DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date) {
@@ -61,7 +70,7 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
         self.showActionSheet()
     }
     
-        
+    
     @IBAction func btnSelectGenderMale(_ sender: Any) {
         self.btnMale.setImage(UIImage.init(named: "CheckedCheckbox"), for: .normal)
         self.btnFemale.setImage(UIImage.init(named: "UncheckedCheckbox"), for: .normal)
@@ -89,10 +98,12 @@ class ViewController: UIViewController , UINavigationControllerDelegate, UIImage
     }
     
     func gotoLoginDetailViewController()  {
-//        loginUserDetails = ["profilepic": btnProfilePicture.currentImage as Any, "username": self.textfieldUserName.text!, "email": self.textfieldEmail.text! , "phonenumber": self.textfieldPhonenumber.text!, "dateofbirth": self.textfiledDateOfBirth.text!, "gender": stringGender]
-//        let loginDetails = self.storyboard?.instantiateViewController(withIdentifier: "LoginDetailController") as! LoginDetailController
-//        loginDetails.loginUserDetails = loginUserDetails
-//        self.navigationController?.pushViewController(loginDetails, animated: true)
+        
+      userDetails = ["profilepic": btnProfilePicture.currentImage as Any, "username": self.tfUserName.text!, "email": self.tfEmail.text! , "phonenumber": self.tfPhonenumber.text!, "dateofbirth": self.tfDateOfBirth.text!, "gender": stringGender]
+        
+      let details = self.storyboard?.instantiateViewController(withIdentifier: "detailViewController") as! DetailViewController
+      details.userDetails = userDetails
+        self.navigationController?.pushViewController(details, animated: true)
     }
     
     
