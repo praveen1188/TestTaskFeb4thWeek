@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  iOSTestTask
 //
-//  Created by Pushpendra Mishra on 03/03/17.
-//  Copyright © 2017 Pushpendra Mishra. All rights reserved.
+//  Created by Praveen  on 03/03/17.
+//  Copyright © 2017 Praveen. All rights reserved.
 //
 
 import UIKit
